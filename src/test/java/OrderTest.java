@@ -1,3 +1,4 @@
+import com.sun.org.apache.xpath.internal.operations.Or;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -55,5 +56,25 @@ public class OrderTest {
 
         assertEquals(expectedNumberOfTacosAdded, actualNumberOfTacosAdded);
         assertTrue(testTacoOrder.completeOrder.containsKey(chickenTaco));
+    }
+
+    @Test
+    public void shouldAddMultipleTacosToOrder_WhenAddToOrderCalled(){
+        Order testTacoOrder = new Order();
+        VeggieTaco veggieTaco = new VeggieTaco();
+        ChorizoTaco chorizoTaco = new ChorizoTaco();
+        ChickenTaco chickenTaco = new ChickenTaco();
+        BeefTaco beefTaco = new BeefTaco();
+
+        testTacoOrder.addToOrder(veggieTaco, 2);
+        testTacoOrder.addToOrder(chorizoTaco,1);
+        testTacoOrder.addToOrder(chickenTaco, 3);
+        testTacoOrder.addToOrder(beefTaco, 4);
+
+        int expectedNumberOfTacosAddedToOrder = 10;
+        int actualNumberOfTacosAddedToOrder = testTacoOrder.retrieveTotalItemsAddedToOrder();
+
+        assertEquals(expectedNumberOfTacosAddedToOrder, actualNumberOfTacosAddedToOrder);
+        
     }
 }
