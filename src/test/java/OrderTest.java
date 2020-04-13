@@ -1,4 +1,5 @@
 import com.sun.org.apache.xpath.internal.operations.Or;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -6,10 +7,23 @@ import static org.junit.Assert.assertTrue;
 
 public class OrderTest {
 
+    private Order testTacoOrder;
+    private VeggieTaco veggieTaco;
+    private ChorizoTaco chorizoTaco;
+    private ChickenTaco chickenTaco;
+    private BeefTaco beefTaco;
+
+    @Before
+    public void setUp(){
+        testTacoOrder = new Order();
+        veggieTaco = new VeggieTaco();
+        chorizoTaco = new ChorizoTaco();
+        chickenTaco = new ChickenTaco();
+        beefTaco = new BeefTaco(); 
+    }
+
     @Test
     public void shouldAddVeggieTacoToOrder_WhenAddToOrderCalled() {
-        Order testTacoOrder = new Order();
-        VeggieTaco veggieTaco = new VeggieTaco();
 
         testTacoOrder.addToOrder(veggieTaco, 1);
         int expectedNumberOfTacosAdded = 1;
@@ -21,8 +35,6 @@ public class OrderTest {
 
     @Test
     public void shouldAddChorizoTacoToOrder_WhenAddToOrderCalled(){
-        Order testTacoOrder = new Order();
-        ChorizoTaco chorizoTaco = new ChorizoTaco();
 
         testTacoOrder.addToOrder(chorizoTaco, 1);
         int expectedNumberOfTacosAdded = 1;
@@ -34,8 +46,6 @@ public class OrderTest {
 
     @Test
     public void shouldAddBeefTacoToOrder_WhenAddToOrderCalled(){
-        Order testTacoOrder = new Order();
-        BeefTaco beefTaco = new BeefTaco();
 
         testTacoOrder.addToOrder(beefTaco, 1);
         int expectedNumberOfTacosAdded = 1;
@@ -47,8 +57,6 @@ public class OrderTest {
 
     @Test
     public void shoudAddChickenTacoToOrder_WhenAddToOrderCalled(){
-        Order testTacoOrder = new Order();
-        ChickenTaco chickenTaco = new ChickenTaco();
 
         testTacoOrder.addToOrder(chickenTaco, 1);
         int expectedNumberOfTacosAdded = 1;
@@ -60,11 +68,6 @@ public class OrderTest {
 
     @Test
     public void shouldAddMultipleTacosToOrder_WhenAddToOrderCalled(){
-        Order testTacoOrder = new Order();
-        VeggieTaco veggieTaco = new VeggieTaco();
-        ChorizoTaco chorizoTaco = new ChorizoTaco();
-        ChickenTaco chickenTaco = new ChickenTaco();
-        BeefTaco beefTaco = new BeefTaco();
 
         testTacoOrder.addToOrder(veggieTaco, 2);
         testTacoOrder.addToOrder(chorizoTaco,1);
@@ -75,6 +78,6 @@ public class OrderTest {
         int actualNumberOfTacosAddedToOrder = testTacoOrder.retrieveTotalItemsAddedToOrder();
 
         assertEquals(expectedNumberOfTacosAddedToOrder, actualNumberOfTacosAddedToOrder);
-        
     }
+
 }

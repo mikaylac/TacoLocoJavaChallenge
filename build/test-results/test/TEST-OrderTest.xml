@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-13T00:39:27" hostname="Mikaylas-Razer-Blade" time="0.003">
+<testsuite name="OrderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-13T00:50:09" hostname="Mikaylas-Razer-Blade" time="0.001">
   <properties/>
-  <testcase name="shoudAddChickenTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.001"/>
-  <testcase name="shouldAddMultipleTacosToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.002"/>
+  <testcase name="shoudAddChickenTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
+  <testcase name="shouldAddMultipleTacosToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
   <testcase name="shouldAddBeefTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
   <testcase name="shouldAddVeggieTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
   <testcase name="shouldAddChorizoTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
