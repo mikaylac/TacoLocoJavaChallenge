@@ -30,5 +30,30 @@ public class OrderTest {
         assertEquals(expectedNumberOfTacosAdded, actualNumberOfTacosAdded);
         assertTrue(testTacoOrder.completeOrder.containsKey(chorizoTaco));
     }
-    
+
+    @Test
+    public void shouldAddBeefTacoToOrder_WhenAddToOrderCalled(){
+        Order testTacoOrder = new Order();
+        BeefTaco beefTaco = new BeefTaco();
+
+        testTacoOrder.addToOrder(beefTaco, 1);
+        int expectedNumberOfTacosAdded = 1;
+        int actualNumberOfTacosAdded = testTacoOrder.completeOrder.get(beefTaco);
+
+        assertEquals(expectedNumberOfTacosAdded, actualNumberOfTacosAdded);
+        assertTrue(testTacoOrder.completeOrder.containsKey(beefTaco));
+    }
+
+    @Test
+    public void shoudAddChickenTacoToOrder_WhenAddToOrderCalled(){
+        Order testTacoOrder = new Order();
+        ChickenTaco chickenTaco = new ChickenTaco();
+
+        testTacoOrder.addToOrder(chickenTaco, 1);
+        int expectedNumberOfTacosAdded = 1;
+        int actualNumberOfTacosAdded = testTacoOrder.completeOrder.get(chickenTaco);
+
+        assertEquals(expectedNumberOfTacosAdded, actualNumberOfTacosAdded);
+        assertTrue(testTacoOrder.completeOrder.containsKey(chickenTaco));
+    }
 }
