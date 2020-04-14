@@ -1,6 +1,8 @@
-import com.sun.org.apache.xpath.internal.operations.Or;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.math.BigDecimal;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -19,7 +21,7 @@ public class OrderTest {
         veggieTaco = new VeggieTaco();
         chorizoTaco = new ChorizoTaco();
         chickenTaco = new ChickenTaco();
-        beefTaco = new BeefTaco(); 
+        beefTaco = new BeefTaco();
     }
 
     @Test
@@ -79,5 +81,20 @@ public class OrderTest {
 
         assertEquals(expectedNumberOfTacosAddedToOrder, actualNumberOfTacosAddedToOrder);
     }
+
+    @Test
+    public void shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled(){
+        testTacoOrder.addToOrder(veggieTaco, 2);
+        testTacoOrder.addToOrder(chickenTaco, 1);
+        testTacoOrder.addToOrder(beefTaco,1);
+        testTacoOrder.addToOrder(chorizoTaco,1);
+
+        BigDecimal actualOrderTotal = testTacoOrder.calculateOrderTotal();
+
+        BigDecimal expectedOrderTotal = new BigDecimal("14.50");
+
+        assertEquals(expectedOrderTotal, actualOrderTotal);
+    }
+    
 
 }

@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,4 +20,17 @@ public class Order {
     }
 
 
+    public BigDecimal calculateOrderTotal() {
+       BigDecimal orderTotal = new BigDecimal(0);
+       MathContext mathContext = new MathContext(4);
+        for (Map.Entry<Taco, Integer> orderItem : completeOrder.entrySet()) {
+            BigDecimal tacoPrice = orderItem.getKey().getPrice();
+            int quantityOrdered = orderItem.getValue();
+            BigDecimal amountToAddToTotal = tacoPrice.multiply(new BigDecimal(quantityOrdered));
+            orderTotal = orderTotal.add(amountToAddToTotal,mathContext);
+        }
+
+       return orderTotal;
+
+    }
 }
