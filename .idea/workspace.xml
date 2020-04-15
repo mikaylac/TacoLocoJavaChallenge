@@ -13,25 +13,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BeefTaco.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BeefTaco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ChickenTaco.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ChickenTaco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ChorizoTaco.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ChorizoTaco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Taco.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Taco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VeggieTaco.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/VeggieTaco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/OrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/OrderTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OrderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-OrderTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BeefTaco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BeefTaco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ChickenTaco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChickenTaco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ChorizoTaco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChorizoTaco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Taco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VeggieTaco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VeggieTaco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,33 +72,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.OrderTest.shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled">
+  <component name="RunManager" selected="Gradle.OrderTest">
     <configuration name="OrderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;OrderTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="OrderTest.shouldAddBeefTacoToOrder_WhenAddToOrderCalled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;OrderTest.shouldAddBeefTacoToOrder_WhenAddToOrderCalled&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -144,12 +113,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OrderTest.shouldAddVeggieTacoToOrder_WhenAddToOrderCalled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderTest.shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;OrderTest.shouldAddVeggieTacoToOrder_WhenAddToOrderCalled&quot;" />
+        <option name="scriptParameters" value="--tests &quot;OrderTest.shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -184,13 +153,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="OrderTest.shouldNotApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;OrderTest.shouldNotApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderTest" />
+        <item itemvalue="Gradle.OrderTest.shouldNotApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" />
+        <item itemvalue="Gradle.OrderTest.shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" />
         <item itemvalue="Gradle.OrderTest.shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled" />
         <item itemvalue="Gradle.OrderTest.shouldAddMultipleTacosToOrder_WhenAddToOrderCalled" />
-        <item itemvalue="Gradle.OrderTest" />
-        <item itemvalue="Gradle.OrderTest.shouldAddBeefTacoToOrder_WhenAddToOrderCalled" />
-        <item itemvalue="Gradle.OrderTest.shouldAddVeggieTacoToOrder_WhenAddToOrderCalled" />
       </list>
     </recent_temporary>
   </component>
@@ -208,38 +197,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1522" height="214" key="GridCell.Tab.0.bottom" timestamp="1586905344573">
+    <state width="1522" height="214" key="GridCell.Tab.0.bottom" timestamp="1586909438227">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="214" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586905344573" />
-    <state width="1522" height="214" key="GridCell.Tab.0.center" timestamp="1586905344572">
+    <state width="1522" height="214" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586909438227" />
+    <state width="1522" height="214" key="GridCell.Tab.0.center" timestamp="1586909438222">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="214" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586905344572" />
-    <state width="1522" height="214" key="GridCell.Tab.0.left" timestamp="1586905344572">
+    <state width="1522" height="214" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586909438222" />
+    <state width="1522" height="214" key="GridCell.Tab.0.left" timestamp="1586909438222">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="214" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586905344572" />
-    <state width="1522" height="214" key="GridCell.Tab.0.right" timestamp="1586905344572">
+    <state width="1522" height="214" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586909438222" />
+    <state width="1522" height="214" key="GridCell.Tab.0.right" timestamp="1586909438226">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="214" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586905344572" />
-    <state width="1522" height="273" key="GridCell.Tab.1.bottom" timestamp="1586905241831">
+    <state width="1522" height="214" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586909438226" />
+    <state width="1522" height="273" key="GridCell.Tab.1.bottom" timestamp="1586908923223">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="273" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586905241831" />
-    <state width="1522" height="273" key="GridCell.Tab.1.center" timestamp="1586905241831">
+    <state width="1522" height="273" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586908923223" />
+    <state width="1522" height="273" key="GridCell.Tab.1.center" timestamp="1586908923223">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="273" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586905241831" />
-    <state width="1522" height="273" key="GridCell.Tab.1.left" timestamp="1586905241831">
+    <state width="1522" height="273" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586908923223" />
+    <state width="1522" height="273" key="GridCell.Tab.1.left" timestamp="1586908923223">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="273" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586905241831" />
-    <state width="1522" height="273" key="GridCell.Tab.1.right" timestamp="1586905241831">
+    <state width="1522" height="273" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586908923223" />
+    <state width="1522" height="273" key="GridCell.Tab.1.right" timestamp="1586908923223">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1522" height="273" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586905241831" />
+    <state width="1522" height="273" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586908923223" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1586903279492">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -276,9 +265,24 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Order.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/OrderTest.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="5" />
+          <line>105</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Order.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Order.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

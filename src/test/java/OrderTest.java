@@ -2,7 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
+
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -58,7 +58,7 @@ public class OrderTest {
     }
 
     @Test
-    public void shoudAddChickenTacoToOrder_WhenAddToOrderCalled(){
+    public void shouldAddChickenTacoToOrder_WhenAddToOrderCalled(){
 
         testTacoOrder.addToOrder(chickenTaco, 1);
         int expectedNumberOfTacosAdded = 1;
@@ -84,17 +84,31 @@ public class OrderTest {
 
     @Test
     public void shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled(){
-        testTacoOrder.addToOrder(veggieTaco, 2);
         testTacoOrder.addToOrder(chickenTaco, 1);
         testTacoOrder.addToOrder(beefTaco,1);
         testTacoOrder.addToOrder(chorizoTaco,1);
 
         BigDecimal actualOrderTotal = testTacoOrder.calculateOrderTotal();
 
-        BigDecimal expectedOrderTotal = new BigDecimal("14.50");
+        BigDecimal expectedOrderTotal = new BigDecimal("9.50");
 
         assertEquals(expectedOrderTotal, actualOrderTotal);
     }
-    
+
+    @Test
+    public void shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled(){
+        testTacoOrder.addToOrder(veggieTaco, 2);
+        testTacoOrder.addToOrder(chickenTaco, 3);
+        testTacoOrder.addToOrder(beefTaco,1);
+        testTacoOrder.addToOrder(chorizoTaco,5);
+
+        BigDecimal actualOrderTotalWithDiscount = testTacoOrder.calculateOrderTotal();
+
+        BigDecimal expectedOrderTotal = new BigDecimal("27.60");
+
+        assertEquals(expectedOrderTotal, actualOrderTotalWithDiscount);
+
+    }
+
 
 }

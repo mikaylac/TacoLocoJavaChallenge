@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-14T23:02:26" hostname="Mikaylas-Razer-Blade" time="0.006">
+<testsuite name="OrderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-15T00:10:39" hostname="Mikaylas-Razer-Blade" time="0.006">
   <properties/>
-  <testcase name="shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled" classname="OrderTest" time="0.006"/>
+  <testcase name="shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" classname="OrderTest" time="0.004"/>
+  <testcase name="shouldAddMultipleTacosToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.001"/>
+  <testcase name="shouldAddBeefTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
+  <testcase name="shouldAddVeggieTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
+  <testcase name="shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled" classname="OrderTest" time="0.0"/>
+  <testcase name="shouldAddChorizoTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
+  <testcase name="shouldAddChickenTacoToOrder_WhenAddToOrderCalled" classname="OrderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
