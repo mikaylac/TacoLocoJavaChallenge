@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ServicesTest.TacoOrderServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-04-21T00:13:04" hostname="Mikaylas-Razer-Blade" time="0.003">
+  <properties/>
+  <testcase name="shouldApplyTwentyPercentDiscountIfFourOrMoreTacosAreAddedToOrder_WhenCalculateOrderTotalCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.002"/>
+  <testcase name="shouldAddMultipleTacosToOrder_WhenAddToOrderCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <testcase name="shouldAddBeefTacoToOrder_WhenAddToOrderCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <testcase name="shouldAddVeggieTacoToOrder_WhenAddToOrderCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <testcase name="shouldCalculateOrderTotal_WhenCalculateOrderTotalCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <testcase name="shouldAddChorizoTacoToOrder_WhenAddToOrderCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <testcase name="shouldAddChickenTacoToOrder_WhenAddToOrderCalled" classname="ServicesTest.TacoOrderServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
